@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/registro.css">
+</head>
+<body>
+    <main>
+        <div class="home">
+            <h1>Acamica Bank</h1>
+        </div>
+        <div class="polygon">
+            <i class="fas fa-house-user"></i>
+            <div class="reg_container" id="reg">
+                <form class="reg" action="/registro" method="GET" >
+                    <h2>- NUEVO USUARIO -</h2>
+                    <input type="text" name="nUsuario" placeholder="Nombre de usuario" class="input" id="regName" autocomplete="off" required>
+                    <h6 id="infoUS">Entre 6 y 8 digitos<br>( numeros, letras, o ambos. )</h6>
+                    <input type="password" name="cUsuario" placeholder="Clave de usuario" class="input" id="regId" maxlength="8" autocomplete="off" required>
+                    <h6 id="infoID">Entre 6 y 8 digitos numericos.</h6>
+                    <input type="password" name="cUsuario2" placeholder="Nuevamente su clave" class="input" id="regId2" maxlength="8" autocomplete="off" required>
+                    <input type="submit" value="REGISTRARSE" class="submit" id="register">
+                    <input type="checkbox" name="" id="back" hidden>
+                    <label for="back">
+                        <a href="ingreso.html">VOLVER</a>
+                    </label>
+                </form>
+            </div>
+            <i class="fas fa-university"></i>
+        </div>
+    </main>
+<script src="./scripts/registro.js" type="module"></script>
+</body>
+</html>

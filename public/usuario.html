@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/usuario.css">
+    <title>USUARIOS</title>
+</head>
+<body>
+    <main>
+        <div class="home">
+            <h1>Acamica Bank</h1>
+        </div>
+        <div class="polygon">
+            <i class="fas fa-house-user"></i>
+            <div class="form_container" id="form">
+                <h2>- TRANSFERENCIAS -</h2>
+                <div class="saldo">
+                    <p>BALANCE : $&nbsp;</p>
+                    <p id="saldoUser"></p>
+                </div>
+                <div class="forms">
+                    <form class="form">
+                        <input type="text" name="nUsuario" placeholder="ID usuario a transferir" class="input" id="userName" autocomplete="off" required>
+                        <input type="text" name='asignDinero' placeholder="Monto a transferir" class="input" id="asignMoney" autocomplete="off" required>
+                        <input type="button" value=TRANSFERIR class="submit" id="submitTransf">
+                    </form>
+                </div>
+                <a href="ingreso.html">SALIR</a>
+            </div>
+            <i class="fas fa-university"></i>
+        </div>  
+    </main>
+<script src="scripts/usuario.js" type="module"></script>    
+</body>
+</html>

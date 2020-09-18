@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/ingreso.css">
+</head>
+<body>
+    <main>
+        <div class="home">
+            <h1>Acamica Bank</h1>
+        </div>
+        <div class="polygon">
+            <i class="fas fa-house-user"></i>
+            <div class="form_container" id="form">
+                    <form class="form">
+                        <h2>- INGRESO -</h2>
+                        <input type="text" name="nUsuario" placeholder="Nombre de usuario" class="input" id="formName"  required>
+                        <input type="password" name="cUsuario" placeholder="Clave de usuario" class="input" id="formId" maxlength="8" autocomplete="off"  required>
+                        <input type="button" value="INGRESAR" class="submit">
+                        <input type="checkbox" name="" id="check" hidden>
+                        <label for="check">
+                            <p>Aún no estas registrado?<br><a href="registro.html">Haz click aqui.</a></p>
+                        </label>
+                    </form>
+            </div>
+            <i class="fas fa-university"></i>
+        </div>  
+    </main>
+    <script src="./scripts/ingreso.js" type="module"></script>
+</body>
+</html>

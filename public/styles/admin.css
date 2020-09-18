@@ -1,0 +1,195 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Raleway , sans-serif;
+}
+body {
+    background-color: rgb(205, 201, 241);
+}
+.home {
+    color: rgb(37, 41, 46) ;
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 60px;
+    text-align: center;
+    transform: rotate(-4deg)translateY(30px);
+}
+.polygon {
+    background-color: rgb(37, 41, 46);
+    background-image: linear-gradient(90deg,rgb(18, 20, 22), rgb(102, 100, 100));
+    clip-path: polygon(0 17%, 100% 0, 100% 83%, 0% 100%);
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transform: translateY(-20px);
+}
+.polygon .fa-house-user {
+    height: 0px;
+    font-size: 200px;
+    color: rgb(205, 201, 241);
+    transform: translateY(150px);
+    margin-left: 2vw;
+    box-shadow: 14px 14px 32px rgb(12, 49, 158);
+}
+.polygon .fa-university {
+    height: 0px;
+    font-size: 200px;
+    color: rgb(205, 201, 241);
+    transform: translateY(150px);
+    margin-right: 2vw;
+}
+.form_container {
+    margin-top: 10vh;
+    width: 800px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 32px rgb(0, 0, 0),
+            inset 3px 3px 15px rgb(137, 138, 141),
+            inset -3px -3px 15px rgb(137, 138, 141);
+}
+.form_container .saldo {
+    display: flex;
+}
+.form_container .forms {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.forms .form {
+    width: 45%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.forms .listaUsuarios {
+    padding-top: 10px;
+    background-color: white;
+    width: 60%;
+    height: 60%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    border-radius: 10px;
+    border:solid 2px rgb(137, 138, 141);
+    box-shadow: 
+            inset 3px 3px 10px rgb(137, 138, 141),
+            inset -3px -3px 10px rgb(137, 138, 141);
+             
+}
+.listaUsuarios::-webkit-scrollbar {
+    width: 1em;
+    cursor: pointer;
+}
+.listaUsuarios::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: 
+            inset 3px 3px 15px rgb(137, 138, 141),
+            inset -3px -3px 15px rgb(137, 138, 141);
+}
+.listaUsuarios .usuario {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    border-bottom: 1px solid rgb(137, 138, 141);
+    margin-top: 15px;
+    margin-bottom:10px;
+    cursor: pointer;
+
+}
+.usuario:hover {
+    background-color: rgb(37, 41, 46);
+    color : white;
+    padding: 4px 2px 4px 2px;
+    border-radius: 5px;
+    transform: scale(1.1);
+    transform: translateY(-2px);
+    transition: ease-in-out 0.4s;
+}
+.usuario:active {
+    box-shadow: 
+                 3px 3px 20px rgb(137, 138, 141),
+                 -3px -3px 20px rgb(137, 138, 141);
+}
+.form_container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(22, 22, 22);
+    margin-top: 35px;
+}
+.form_container .forms .form .input {
+    font-size: 16px;
+    height: 40px;
+    width:65%;
+    padding: 4px 0px 4px 10px;
+    border: solid 1.5px darkgray;
+    border-radius: 5px;
+    outline: none;
+}
+.form_container .forms .form .submit {
+    font-size: 16px;
+    color: rgb(37, 41, 46);
+    padding: 10px 0px 10px 0px;
+    width: 55%;
+    border: solid 1.5px darkgray;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: ease-in-out .4s;
+    margin-bottom: 25px;
+}
+.form_container .forms .form .submit:hover {
+    background-color: darkgray;
+    border: solid 1.5px lightslategray;
+    width: 35%;
+}
+.form p {
+    font-size: 14px;
+    color: rgb(37, 41, 46);
+}
+
+.form_container a {
+    margin-top: -25vh;
+    color: white;
+    background-color: rgb(37, 41, 46);
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 28px;
+    letter-spacing: 1px;
+    align-self: flex-end;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.form_container a:hover {
+    box-shadow: 
+    3px 3px 10px rgb(137, 138, 141),
+    -3px -3px 10px rgb(137, 138, 141);
+}
+
+@media screen and (max-width:1240px){.home {transform: rotate(-5deg)translateY(30px);}}
+@media screen and (max-width:1024px){
+    .home {transform: rotate(-6deg)translateY(30px);}
+    .polygon .fa-house-user { display: none;}
+    .polygon .fa-university {display: none;}
+}
+@media screen and (max-width:920px){.home {font-size: 30px;transform: rotate(-7deg)translateY(30px);}}
+@media screen and (max-width:840px){.home {font-size: 26px;transform: rotate(-8deg)translateY(30px);}}
+@media screen and (max-width:720px){.home {transform: rotate(-9deg)translateY(30px);}}
+@media screen and (max-width:640px){.home {transform: rotate(-10deg)translateY(30px);}}
